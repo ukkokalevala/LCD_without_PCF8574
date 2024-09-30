@@ -1,0 +1,13 @@
+#include <LiquidCrystal.h>
+
+// Initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  lcd.begin(16, 2);  // Set up the LCD's number of columns and rows
+  lcd.print("Contrast Test");  // Display test message
+}
+
+void loop() {
+  // Nothing in the loop, adjust the potentiometer to see the contrast change
+}
